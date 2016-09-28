@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Toolbar -->
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    style="@style/Widget.MaterialSheetFab.ToolBar" />
+
+                <!-- Tabs -->
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabs"
+                    style="@style/Widget.MaterialSheetFab.TabLayout" />
+            </android.support.design.widget.AppBarLayout>
+
+            <!-- View pager -->
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/appbar"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <!-- Your FAB implementation -->
+        <huaqin.houlinyuan.a0920_apnsui.ui.Fab
+            android:id="@+id/fab"
+            style="@style/Widget.MaterialSheetFab.Fab"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+        <!-- Overlay that dims the screen -->
+        <com.gordonwong.materialsheetfab.DimOverlayFrameLayout
+            android:id="@+id/overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Circular reveal container for the sheet -->
+        <io.codetail.widget.RevealLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|bottom"
+            android:orientation="vertical">
+
+            <!-- Sheet that contains your items -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/fab_sheet"
+                style="@style/Widget.MaterialSheetFab.Sheet">
+
+                <!-- Sheet items -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/fab_sheet_item_reinitdb_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/fab_sheet_item_reinitdb"
+                            style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                            android:drawableLeft="@drawable/refresh"
+                            android:drawableStart="@drawable/refresh"
+                            android:text="@string/fab_reinitdb" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fab_sheet_item_siminfo_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/fab_sheet_item_siminfo"
+                            style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                            android:drawableLeft="@drawable/sim"
+                            android:drawableStart="@drawable/sim"
+                            android:text="@string/fab_siminfo" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fab_sheet_item_mulitquery_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:id="@+id/fab_sheet_item_mulitquery"
+                            style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                            android:drawableLeft="@drawable/search"
+                            android:drawableStart="@drawable/search"
+                            android:text="@string/fab_mulitquery" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fab_sheet_item_apnadd_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:id="@+id/fab_sheet_item_apnadd"
+                            style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                            android:drawableLeft="@drawable/add"
+                            android:drawableStart="@drawable/add"
+                            android:text="@string/fab_add" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fab_sheet_item_apnlist_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/fab_sheet_item_apnlist"
+                            style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                            android:drawableLeft="@drawable/parent"
+                            android:drawableStart="@drawable/parent"
+                            android:text="@string/fab_apnlist" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fab_sheet_item_home_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/fab_sheet_item_home"
+                            style="@style/TextAppearance.MaterialSheetFab.Sheet.Item"
+                            android:drawableLeft="@drawable/home"
+                            android:drawableStart="@drawable/home"
+                            android:text="@string/fab_home" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </io.codetail.widget.RevealLinearLayout>
+
+        <!-- Snackbar -->
+        <LinearLayout
+            android:id="@+id/snackbar"
+            style="@style/Widget.MaterialSheetFab.Snackbar"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                style="@style/TextAppearance.MaterialSheetFab.Snackbar.Message"
+                android:text="@string/snackbar_shared_msg" />
+
+            <TextView
+                style="@style/TextAppearance.MaterialSheetFab.Snackbar.Action"
+                android:text="@string/view" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/layout_drawer_header"
+        app:menu="@menu/drawer_menu"/>
+
+</android.support.v4.widget.DrawerLayout>

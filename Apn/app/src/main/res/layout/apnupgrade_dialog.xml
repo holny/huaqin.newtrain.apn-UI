@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".apn_crud.ApnUpgradeDialogActivity">
+    <TableRow>
+        <TextView
+            android:id="@+id/apnupgrade_attrname"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:id="@+id/apnupgrade_newattrvalue"
+            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:hint="@string/apnupgrade_newattrvalue_hint"
+            android:maxLength="15"
+            android:maxLines="1"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/apnupgrade_confirm"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/apnupgrade_confirm"/>
+        <Button
+            android:id="@+id/apnupgrade_cancel"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/apnupgrade_cancel"/>
+    </TableRow>
+
+</TableLayout>

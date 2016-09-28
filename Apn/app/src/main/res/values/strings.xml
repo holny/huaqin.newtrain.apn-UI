@@ -1,0 +1,125 @@
+<resources>
+
+    <string name="app_name">Apn-app</string>
+    <string name="all">All</string>
+    <string name="createnote">Create note</string>
+    <string name="closedrawer">Close drawer</string>
+    <string name="favorites">Favorites</string>
+    <string name="notes">Notes</string>
+    <string name="opendrawer">Open drawer</string>
+    <string name="photo">Photo</string>
+    <string name="recording">Recording</string>
+    <string name="refresh">Refresh</string>
+    <string name="reminder">Reminder</string>
+    <string name="search">Search</string>
+    <string name="shared">Shared</string>
+    <string name="sheet_item_pressed">Item pressed</string>
+    <string name="snackbar_shared_msg">Gordon Wong shared a note with you.</string>
+    <string name="view">View</string>
+
+
+    <string name="apnlist_show">显示Apn列表</string>
+    <string name="apn_add">添加Apn</string>
+
+    <string name="carrier">carrier</string>
+    <string name="mcc">mcc</string>
+    <string name="mnc">mnc</string>
+    <string name="apn">apn</string>
+    <string name="user">user</string>
+    <string name="server">server</string>
+    <string name="password">password</string>
+    <string name="proxy">proxy</string>
+    <string name="port">port</string>
+    <string name="mmsproxy">mmsproxy</string>
+    <string name="mmsport">mmsport</string>
+    <string name="mmsc">mmsc</string>
+    <string name="type">type</string>
+    <string name="mvno_type">mvno_type</string>
+    <string name="mvno_match_data">mvno_match_data</string>
+    <string name="virtual_net_rule">virtual_net_rule</string>
+    <string name="imsi_start">imsi_start</string>
+    <string name="num_match_short">num_match_short</string>
+    <string name="apnupgrade_newattrvalue_hint">请输入</string>
+    <string name="apnupgrade_confirm">确认</string>
+    <string name="apnupgrade_cancel">取消</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+    <string name="save">保存</string>
+    <string name="back">返回</string>
+
+    <string name="add">添加</string>
+    <string name="search_hint">输入carrier搜索</string>
+    <string name="confirm">确认</string>
+    <string name="reinitdb">重新构建数据库</string>
+    <string name="mulitquery">多条件组合查询</string>
+    <string name="virtualquery">增加虚拟卡查询条件</string>
+    <string name="showsiminfo">显示sim卡信息</string>
+    <string name="next">下一个</string>
+
+    <string name="sim_callstate">呼叫状态</string>
+    <string name="sim_cellLocation">当前位置</string>
+    <string name="sim_connecttype">数据连接类型</string>
+    <string name="sim_connectstate">数据连接状态</string>
+    <string name="sim_deviceid">唯一设备id</string>
+    <string name="sim_devicesoftwareversion">设备软件版本号</string>
+    <string name="sim_line1number">1号线电话号码</string>
+    <string name="sim_neighboringcellInfo">相邻小区信息</string>
+    <string name="sim_networkcountryiso">注册的网络运营商国家代码</string>
+    <string name="sim_networkoperator">MCC +跨国公司的注册网络运营商</string>
+    <string name="sim_networkoperatorname">注册的网络运营商的名字</string>
+    <string name="sim_networktype">目前在设备上使用的无线电技术（网络类型）</string>
+    <string name="sim_phonetype">设备的类型（手机制式）</string>
+    <string name="sim_simcountryiso">SIM卡运营商的国家代码</string>
+    <string name="sim_simoperator">MCC +跨国公司(移动国家代码+移动网络代码)的提供者的SIM卡</string>
+    <string name="sim_simoperatorname">服务提供者的名称(SPN)</string>
+    <string name="sim_simserialnumber">SIM卡的序列号</string>
+    <string name="sim_simstate">SIM卡设备的状态</string>
+    <string name="sim_subscriberid">唯一的用户ID,例如,IMSI为GSM手机</string>
+    <string name="sim_voicemailalphatag">检索与语音信箱号码相关的字母标识符</string>
+    <string name="sim_voicemailnumber">语音信箱号码</string>
+    <string name="sim_hasicccard">是否插入ICC卡</string>
+    <string name="sim_networkroaming">是否正在漫游再当前网络</string>
+
+    <string name="nulltext">空</string>
+
+    <string name="carrierName">carrierName</string>
+    <string name="countryIso">countryIso</string>
+    <string name="dataRoaming">dataRoaming</string>
+    <string name="displayName">displayName</string>
+    <string name="iccId">iccId</string>
+    <string name="iconTint">iconTint</string>
+    <string name="number">number</string>
+    <string name="simSlotIndex">simSlotIndex(soltId)</string>
+    <string name="subscriptionId">subscriptionId(subscriptionId)</string>
+    <string name="deviceId">deviceId(IMEI)</string>
+    <string name="dataActivity">dataActivity</string>
+    <string name="dataState">dataState</string>
+    <string name="networkOperatorForSubscription">networkOperator(MNC)</string>
+    <string name="networkOperatorName">networkOperatorName(运营商名)</string>
+    <string name="simOperator">simOperator(MNC)</string>
+    <string name="simOperatorNameForPhone">simOperatorName(SPN)</string>
+    <string name="simSerialNumber">simSerialNumber(iccId)</string>
+    <string name="simState">simState</string>
+    <string name="subscriberId">subscriberId(IMSI)</string>
+    <string name="isNetworkRoaming">isNetworkRoaming</string>
+    <string name="hasIccCard">hasIccCard</string>
+
+    <string name="home">Apn应用</string>
+    <string name="simatitle">主卡信息</string>
+    <string name="simbtitle">副卡信息</string>
+
+    <string name="fab_apnlist">apn列表</string>
+    <string name="fab_add">添加apn</string>
+    <string name="fab_mulitquery">多条件查询</string>
+    <string name="fab_siminfo">sim卡信息</string>
+    <string name="fab_reinitdb">重新构建数据库</string>
+    <string name="fab_home">主页</string>
+
+    <string name="sim">SIM卡</string>
+    <string name="apntitle">什么是APN?</string>
+    <string name="apn1">\t\tAPN指一种网络接入技术，是通过手机上网时必须配置的一个参数，它决定了手机通过哪种接入方式来访问网络。</string>
+    <string name="apn2">\t\t对于手机用户来说，可以访问的外部网络类型有很多，例如：Internet、WAP网站、集团企业内部网络、行业内部专用网络。而不同的接入点所能访问的范围以及接入的方式是不同的，网络侧如何知道手机激活以后要访问哪个网络从而分配哪个网段的IP呢，这就要靠APN来区分了，即APN决定了用户的手机通过哪种接入方式来访问什么样的网络。</string>
+    <string name="apn3">\t\t本应用是对apns-conf.xml进行解析出apn列表并存储到数据库中，还有对手机所插入的主副SIM卡进行信息识别操作</string>
+
+
+</resources>

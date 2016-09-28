@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/app_name">
+        <menu>
+            <item
+
+                android:checkable="true"
+                android:id="@+id/drawer_menu_home"
+                android:title="@string/home"/>
+
+        </menu>
+    </item>
+    <group>
+        <item
+            android:id="@+id/drawer_menu_showapnlist"
+            android:checkable="true"
+
+            android:title="@string/apnlist_show"/>
+        <item
+            android:id="@+id/drawer_menu_apnadd"
+            android:checkable="true"
+
+            android:title="@string/apn_add"/>
+        <item
+            android:id="@+id/drawer_menu_initdatabase"
+            android:checkable="true"
+
+            android:title="@string/reinitdb"/>
+        <item
+            android:id="@+id/drawer_menu_mulitquery"
+            android:checkable="true"
+
+            android:title="@string/mulitquery"/>
+    </group>
+
+    <item android:title="@string/sim">
+        <menu>
+            <item
+                android:id="@+id/drawer_menu_siminfo"
+                android:checkable="true"
+                android:title="@string/showsiminfo"/>
+
+        </menu>
+    </item>
+
+</menu>
